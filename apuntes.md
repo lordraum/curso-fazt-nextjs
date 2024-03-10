@@ -25,4 +25,55 @@ Import Link from 'next/link'
 <Link href='/'>Home</Link>
 ```
 
-## Metadatos
+### Metadatos
+
+Sirve para definir etiquetas del head, por medio de clave y valor. Se puede usar en cualquier page o layout
+
+```jsx
+// layout.jsx
+export const metadata = {
+  title: 'page name',
+  // Etiquetas meta
+  description: 'Description of my site'
+} 
+```
+
+## Fonts
+
+Se puede importar fuentes directamente desde sgoogle fonts
+
+```jsx
+import { Roboto } from 'next/font/google'
+
+const roboto = Roboto ({
+  weight: ['300', '400']
+  styles: ['italic', 'normal']
+})
+
+<body className={roboto.className}></body>
+
+```
+
+## Error 404
+
+NextJS tiene una página por defecto para el error not found.
+
+### Crear página not found personalizada
+
+`app/not-found.jsx`--> Lo que se agregue en esa página, será renderizado, cuando se presente el error not found
+
+## React Server Components
+
+NextJS es un framework que tiene características de frontend y backend.
+
+### Server components
+
+Componentes que no necesitan interactividad, son los que se crean por defecto en NextJS.
+
+### Client Components
+
+Son los que requieren interactividad, se utiliza la instrucción `"use client"`.
+
+Si el componente cliente carga otro componente, este no necesita la instrucción para funcionar con interactividad.
+
+Metadata solo funciona en los componentes de servidor.
