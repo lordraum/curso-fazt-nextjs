@@ -12,6 +12,10 @@ const links = [
   {
     path: '/tienda',
     pageName: 'Tienda'
+  },
+  {
+    path: '/posts',
+    pageName: 'Posts'
   }
 ]
 

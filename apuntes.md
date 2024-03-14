@@ -88,4 +88,15 @@ El fectch en React sin Next requiere --> usestate, useEffect.
 
 En Next JS al ejecutarse desde el servidor no requiere utilizar ningún hook
 
+## Loading page
+
+Páginas especial se nombra page.jsx --> En este componente se renderizará lo que se desee mientras la página carga.
+
+```js
+// Esto simulará que los datos se demoran 3 segundos en llegar
+await new Promise((resolve) => setTimeout(resolve, 3000))
+```
+
+- Tip --> Cargar la página sin el caché, click derecho en el ícono de recargar --> vaciar caché forzado
+
  
