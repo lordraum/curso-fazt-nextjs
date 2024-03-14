@@ -68,7 +68,9 @@ NextJS es un framework que tiene características de frontend y backend.
 
 ### Server components
 
-Componentes que no necesitan interactividad, son los que se crean por defecto en NextJS.
+Componentes que no necesitan interactividad, son los que se crean por defecto en NextJS. 
+
+El console.log() se ve en la terminal del servidor no en el navegador.
 
 ### Client Components
 
@@ -77,3 +79,13 @@ Son los que requieren interactividad, se utiliza la instrucción `"use client"`.
 Si el componente cliente carga otro componente, este no necesita la instrucción para funcionar con interactividad.
 
 Metadata solo funciona en los componentes de servidor.
+
+## Fetch
+
+Se realiza en los Server Components
+
+El fectch en React sin Next requiere --> usestate, useEffect.
+
+En Next JS al ejecutarse desde el servidor no requiere utilizar ningún hook
+
+ 
