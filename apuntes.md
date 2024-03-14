@@ -99,4 +99,6 @@ await new Promise((resolve) => setTimeout(resolve, 3000))
 
 - Tip --> Cargar la página sin el caché, click derecho en el ícono de recargar --> vaciar caché forzado
 
- 
+## Params
+
+<!-- https://youtu.be/_SPoSMmN3ZU -->
