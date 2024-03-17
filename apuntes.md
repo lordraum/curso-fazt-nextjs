@@ -103,4 +103,8 @@ await new Promise((resolve) => setTimeout(resolve, 3000))
 
 Una página donámica, es decir que hará uso de los query params se declara con `[]` ,ejemplo `/user/[id]`
 
+### Acceder a las query paramas
+
+Se accede a través de las prop {params}
+
 
