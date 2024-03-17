@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link'
-import { suspense } from 'react'
 
 export default function PostCard ({ post }) {
   return (
