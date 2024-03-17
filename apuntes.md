@@ -101,4 +101,6 @@ await new Promise((resolve) => setTimeout(resolve, 3000))
 
 ## Params
 
-<!-- https://youtu.be/_SPoSMmN3ZU -->
+Una página donámica, es decir que hará uso de los query params se declara con `[]` ,ejemplo `/user/[id]`
+
+
