@@ -103,8 +103,32 @@ await new Promise((resolve) => setTimeout(resolve, 3000))
 
 Una página donámica, es decir que hará uso de los query params se declara con `[]` ,ejemplo `/user/[id]`
 
-### Acceder a las query paramas
+### Acceder a las query params
 
 Se accede a través de las prop {params}
 
+## Suspense
 
+Componente de react --> `import { Suspense } from 'react'`. Similar a loading, pero es para componentes cargados dentro de una aplicación, se utiliza con la prop `fallback={elm}`. Esto hace posible que partes de la web carguen de forma independiente.
+
+No requiere useclient.
+
+```js
+<Suspense
+  fallback={
+    <div>Cargando publicaciones ...</div>
+  }>
+  <Posts />
+</Suspense>
+```
+<!-- Reapasar y comprobar esta funcionalidad -->
+
+## Import alias
+
+Utilidad de nextjs para cargar componentes, reemplazando los niveles por un símbolo --> ejemplo `../../` por `@`
+
+```js
+import PostCard from '../components/post_card'
+import PostCard from '@/components/post_card'
+```
+El @ representaría al root
