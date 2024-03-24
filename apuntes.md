@@ -103,6 +103,8 @@ await new Promise((resolve) => setTimeout(resolve, 3000))
 
 Una página donámica, es decir que hará uso de los query params se declara con `[]` ,ejemplo `/user/[id]`
 
+![query params](image.png)
+
 ### Acceder a las query params
 
 Se accede a través de las prop {params}
@@ -132,3 +134,48 @@ import PostCard from '../components/post_card'
 import PostCard from '@/components/post_card'
 ```
 El @ representaría al root
+
+## css
+
+### css global
+
+Se importa el archivo css desde un layout
+
+### css local (component, page)
+
+Se crea un css dentro de la misma carpeta del componente o page, se importa y se definen las clases que se utilizarán.
+
+### Añadir tailwind
+
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+```js
+//tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+ 
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+```css
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+'[Continúa en crear proyecto nextjs'](https://youtu.be/_SPoSMmN3ZU?t=6078)
